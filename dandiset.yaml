@@ -2,6 +2,7 @@
 # It can be edited online at https://dandiarchive.org/dandiset/000989
 # and obtained from the dandiarchive.
 '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json
+about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -16,9 +17,9 @@ assetsSummary:
   measurementTechnique:
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 41939496
-  numberOfFiles: 206
-  numberOfSubjects: 7
+  numberOfBytes: 52322892
+  numberOfFiles: 257
+  numberOfSubjects: 8
   schemaKey: AssetsSummary
   species:
   - identifier: http://purl.obolibrary.org/obo/NCBITaxon_32644
@@ -26,28 +27,84 @@ assetsSummary:
     schemaKey: SpeciesType
   variableMeasured:
   - ElectrodeGroup
-citation: Dong, QiWei (2024) In vitro electrochemical impedance spectroscopy data
-  - G1 and G2 (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000989/draft
+citation: Otto, Kevin; Orazem, Mark; Cogan, Stuart (2024) In vitro electrochemical
+  impedance spectroscopy data - G1 and G2 (Version draft) [Data set]. DANDI archive.
+  https://dandiarchive.org/dandiset/000989/draft
 contributor:
-- affiliation: []
-  email: dongqiweialexander@gmail.com
+- awardNumber: 1 UO1 NS 126052-01
+  includeInCitation: false
+  name: National Institutes of Health (NIH)
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- email: kevin.otto@bme.ufl.edu
+  identifier: 0000-0002-2317-6194
   includeInCitation: true
-  name: Dong, QiWei
+  name: Otto, Kevin
   roleName:
   - dcite:ContactPerson
   schemaKey: Person
+- email: morazem@che.ufl.edu
+  identifier: 0000-0003-3668-7767
+  includeInCitation: true
+  name: Orazem, Mark
+  schemaKey: Person
+- email: stuart.cogan@utdallas.edu
+  identifier: 0000-0001-6316-3032
+  includeInCitation: true
+  name: Cogan, Stuart
+  schemaKey: Person
 dateCreated: '2024-05-14T02:36:55.555253+00:00'
-description: Representative EIS data of G1 and G2 electrodes for all channels in this
-  UO1 project.
+description: 'Representative EIS data of G1 and G2 electrodes for all channels in
+  this UO1 project.
+
+  For G1 electrodes, the relationship between the diameter of electrode contacts and
+  the electrode number is as follows:
+
+  5 (um): 2, 9, 16, 24
+
+  10: 1, 11, 23, 31
+
+  15: 8, 10, 22, 30
+
+  20: 3, 15, 21, 25
+
+  25: 6, 7, 12, 26
+
+  30: 13, 18, 19, 27
+
+  40: 4, 14, 20 28
+
+  50: 5, 17, 29, 32
+
+  For G2 electrodes, the relationship between the diameter of electrode contacts and
+  the electrode number is as follows:
+
+  5 (um): 2, 3, 4, 5, 6, 7, 17, 18, 19, 20, 22
+
+  10: 9, 12, 13, 14, 15, 16, 25, 26, 27, 28, 29, 32
+
+  circuit: 1-8, 11-30
+
+  terminal: 23, 31
+
+  reference (4004 um^2): 10, 24'
+ethicsApproval: []
 id: DANDI:000989/draft
 identifier: DANDI:000989
+keywords:
+- ultramicroelectrode array
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/000989/versions/draft/assets/
 name: In vitro electrochemical impedance spectroscopy data - G1 and G2
+protocol: []
+relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.7
+studyTarget: []
 url: https://dandiarchive.org/dandiset/000989/draft
 version: draft
+wasGeneratedBy: []
